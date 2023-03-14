@@ -1,8 +1,8 @@
 import math
 print(math.e**10)
 print(pow(math.log((5+(pow(math.sin(8), 2))), 10), (1/6)))
-print('3,55')
-print('4,80')
+print(math.modf(3.55))
+print(math.modf(4.80))
 # zadanie 2
 a = 'WOJCIECH'
 b = 'WIDŹGOWSKI'
@@ -20,8 +20,7 @@ print(d[0], d[d.__len__()-1])
 e = 0x1b6
 f = 0.464323
 g = 'string to jedyna słuszna zmienna'
-print(hex(e), f, g)
-h = hex(e), f, g
+print(format(e, hex()), format(f),format(g))
 print(g.split())
 listy = ['siatkówka', 'piłka nożna', 'koszykówka', 'rugby', 'hokej', 'jazda konna', 'strzelectwo', 'tenis stołowy']
 print(listy)
@@ -46,12 +45,13 @@ print(beg.count('a'))
 a=input('podaj a: ')
 b=input('podaj b: ')
 c=input('podaj c: ')
+wynik=''
 if(a>b)&(a>c):
-    wynik=a
+    print(a)
 elif(b>a)&(b>c):
-    wynik=b
+    print(b)
 elif(c>a)&(c>b):
-    wynik=c
+    print(c)
 elif(a==b):
     wynik='a i b sa równe i największe'
 elif(b==c):
